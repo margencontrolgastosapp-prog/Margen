@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Margen — control de gastos personales</title>
+<meta name="description" content="Margen es una aplicación para anotar un gasto en menos de cinco segundos. Todos los datos se quedan en tu teléfono.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #110C08; --card: #1E1711; --border: #38312B;
+    --text: #F7F0EB; --soft: #A89C92; --muted: #90847A; --tint: #14BBC2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 20px 80px; background: var(--bg); color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+
+  .hero { padding: 72px 0 44px; text-align: center; }
+  .hero img { width: 96px; height: 96px; border-radius: 22px; display: block; margin: 0 auto 24px; }
+  h1 { font-size: 40px; line-height: 1.1; letter-spacing: -0.03em; margin: 0 0 12px; }
+  .tagline { color: var(--soft); font-size: 20px; margin: 0 auto; max-width: 30ch; }
+  .soon {
+    display: inline-block; margin-top: 26px; font-size: 14px; color: var(--muted);
+    border: 1px solid var(--border); border-radius: 999px; padding: 7px 16px;
+  }
+
+  h2 { font-size: 22px; margin: 48px 0 14px; letter-spacing: -0.01em; }
+  h3 { font-size: 17px; margin: 26px 0 4px; }
+  p, li { color: var(--soft); }
+  strong { color: var(--text); font-weight: 600; }
+  a { color: var(--tint); }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+
+  .points { list-style: none; padding: 0; margin: 0; }
+  .points li {
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    padding: 18px 20px; margin-bottom: 12px;
+  }
+  .points b { display: block; color: var(--text); font-size: 17px; margin-bottom: 3px; }
+
+  .contact {
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    padding: 22px; margin-top: 16px;
+  }
+  .contact p { margin: 0 0 8px; }
+  .contact p:last-child { margin-bottom: 0; }
+  .mail { font-size: 18px; word-break: break-all; }
+
+  footer {
+    margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 15px; text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <img src="icon.png" alt="Icono de Margen">
+    <h1>Margen</h1>
+    <p class="tagline">Anota un gasto en menos de cinco segundos.</p>
+    <span class="soon">Próximamente en App Store y Google Play</span>
+  </div>
+
+  <h2>Qué es</h2>
+  <p>
+    Margen es una aplicación de control de gastos personales para iPhone y Android. Está pensada
+    alrededor de una sola idea: <strong>si apuntar un gasto cuesta más de cinco segundos, dejas de
+    hacerlo</strong>. Por eso se abre directamente en el teclado numérico y se guarda al tocar la
+    categoría, sin botones de confirmar.
+  </p>
+
+  <ul class="points">
+    <li>
+      <b>Escribe o dicta la frase entera</b>
+      Al escribir «12500 almuerzo» rellena solo el importe y la categoría. Y aprende: si la
+      corriges, la próxima vez acierta.
+    </li>
+    <li>
+      <b>Todo se queda en tu teléfono</b>
+      Sin cuentas, sin contraseñas y sin enviar nada a ningún servidor. Funciona sin internet.
+    </li>
+    <li>
+      <b>Tus meses, comparables</b>
+      Cuánto llevas gastado, cuánto queda de cada categoría y cómo cerró cada mes del año.
+    </li>
+    <li>
+      <b>Tus datos son tuyos</b>
+      Puedes exportarlos a Excel y guardar una copia de seguridad cuando quieras.
+    </li>
+  </ul>
+
+  <h2>Ayuda y contacto</h2>
+  <p>
+    Si algo no funciona, tienes una duda o quieres proponer una mejora, escribe. Se responde a
+    todos los mensajes.
+  </p>
+  <div class="contact">
+    <p class="mail">
+      <a href="mailto:margen.controlgastos.app@gmail.com">margen.controlgastos.app@gmail.com</a>
+    </p>
+    <p style="font-size:15px; color:var(--muted)">
+      Para que sea más fácil ayudarte, cuenta qué teléfono usas y qué hiciste justo antes del
+      problema.
+    </p>
+  </div>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <h3>¿Se guardan mis gastos en algún servidor?</h3>
+  <p>
+    No. Se guardan solo dentro de tu teléfono y no salen de ahí. Puedes leer el detalle en la
+    <a href="privacidad.html">política de privacidad</a>.
+  </p>
+
+  <h3>¿Qué pasa con mis datos si desinstalo la aplicación?</h3>
+  <p>
+    Se borran con ella, de forma definitiva. Como no hay copia en la nube, nadie puede
+    recuperarlos, tampoco nosotros. <strong>Si vas a cambiar de teléfono o desinstalarla, guarda
+    antes una copia de seguridad</strong> desde Ajustes.
+  </p>
+
+  <h3>¿Cómo paso mis datos a un teléfono nuevo?</h3>
+  <p>
+    En el teléfono viejo, entra en <strong>Ajustes → Copia de seguridad</strong> y guarda el
+    archivo donde prefieras. En el nuevo, instala Margen y usa
+    <strong>Ajustes → Restaurar</strong> eligiendo ese archivo.
+  </p>
+
+  <h3>¿Necesita permiso para el micrófono si dicto un gasto?</h3>
+  <p>
+    No. El dictado es el del teclado de tu propio teléfono; la aplicación solo recibe el texto ya
+    escrito y nunca pide acceso al micrófono.
+  </p>
+
+  <h3>¿Cómo saco mis gastos a Excel?</h3>
+  <p>
+    En <strong>Ajustes → Exportar</strong>. Se genera un archivo CSV preparado para abrirse
+    directamente en Excel, con los importes como números para que puedas sumarlos.
+  </p>
+
+  <footer>
+    <a href="privacidad.html">Política de privacidad</a>
+  </footer>
+
+</div>
+</body>
+</html>
